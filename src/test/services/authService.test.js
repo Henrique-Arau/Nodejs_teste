@@ -9,8 +9,8 @@ describe('Testando a authService.cadastrarUsuario', () => {
   it('- O usuario deve possuir um nome, email e senha', async () => {
     // Arrange - qual as informações para validar
     const usuarioMock = {
-      nome: 'Raphael',
-      email: 'teste@teste.com.br',
+      nome: 'Raphaelz',
+      email: 'reste@teste.com.br',
     };
     // ACT - Buscar as informações
     const usuarioSalvo = authService.cadastrarUsuario(usuarioMock);
@@ -25,8 +25,8 @@ describe('Testando a authService.cadastrarUsuario', () => {
   it('- A senha do usuario precisa ser criptografada quando for salva no banco de dados', async () => {
     // Arrange
     const data = {
-      nome: 'John Doe',
-      email: 'johndoe@example.com',
+      nome: 'John Dos',
+      email: 'sohndoe@example.com',
       senha: 'senha123',
     };
 
@@ -42,8 +42,8 @@ describe('Testando a authService.cadastrarUsuario', () => {
   it('- Não pode ser cadastrado um usuario com email duplicado', async () => {
     // Arrange
     const usuarioMock = {
-      nome: 'Raphael',
-      email: 'teste@gmail.com',
+      nome: 'Raphaelz',
+      email: 'reste@gmail.com',
       senha: '123456',
     };
 
@@ -57,8 +57,8 @@ describe('Testando a authService.cadastrarUsuario', () => {
   it('- Ao cadastrar um usuario deve ser retornado uma mensagem informando que o usuario foi cadastrado', async () => {
     // Arrange
     const data = {
-      nome: 'Johm Doe',
-      email: 'johndoe@example.com',
+      nome: 'Johm Does',
+      email: 'sohndoe@example.com',
       senha: 'senha123',
     };
 
@@ -74,8 +74,8 @@ describe('Testando a authService.cadastrarUsuario', () => {
   it('Ao cadastrar um usuário, validar o retorno das informações do usuário', async () => {
     // Arrange
     const data = {
-      nome: 'John Doe',
-      email: 'johndoe@example.com',
+      nome: 'John Does',
+      email: 'sohndoe@example.com',
       senha: 'senha123',
     };
 
