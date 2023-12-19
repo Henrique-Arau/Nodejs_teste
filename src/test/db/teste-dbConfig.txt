@@ -1,0 +1,2 @@
+- Teste de conexão com obanco de dados
+- Deve retornar o autor registrado na tabela autores
